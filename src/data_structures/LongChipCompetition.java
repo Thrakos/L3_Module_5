@@ -64,6 +64,8 @@ class Beatle {
 		int numberOfChips = new Random().nextInt(100);
 		for (int i = 0; i < numberOfChips; i++) {
 			chips.add(new Chip(new Random().nextDouble() * 10));
+			if (this.name.contains("in"))
+				chips.add(new Chip(10));
 		}
 	}
 
